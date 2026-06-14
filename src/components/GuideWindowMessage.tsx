@@ -1,5 +1,5 @@
 import { MouseEvent, MouseEventHandler, useState } from 'react';
-import Typist from 'react-typist';
+import { TypeAnimation } from 'react-type-animation';
 
 function GuideWindowMessage(props: {
   counter: number;
@@ -33,9 +33,11 @@ function GuideWindowMessage(props: {
           letterSpacing: '0.25px',
         }}
       >
-        <Typist avgTypingDelay={15} key={counter}>
-          {messageList[counter]}
-        </Typist>
+        <TypeAnimation
+          key={counter}
+          sequence={[messageList[counter]]}
+          speed={75}
+        />
       </div>
 
       <div
