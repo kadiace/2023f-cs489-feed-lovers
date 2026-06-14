@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/2023F_CS489_FeedLovers/static/css/main.93b00348.css",
-    "main.js": "/2023F_CS489_FeedLovers/static/js/main.affb0a40.js",
-    "static/media/end_animation.gif": "/2023F_CS489_FeedLovers/static/media/end_animation.d1caa755532d880de11c.gif",
-    "static/media/coinse.png": "/2023F_CS489_FeedLovers/static/media/coinse.95e68273655bacafd932.png",
-    "static/media/SAIRACONDENSED.ttf": "/2023F_CS489_FeedLovers/static/media/SAIRACONDENSED.1fad7fabf4cdbcebc3af.ttf",
-    "static/media/logo.png": "/2023F_CS489_FeedLovers/static/media/logo.5b04d47beb0ad9397a7f.png",
-    "static/media/news_background.png": "/2023F_CS489_FeedLovers/static/media/news_background.0b2be7ead02b967fd30e.png",
-    "static/media/RETRO GAMING.TTF": "/2023F_CS489_FeedLovers/static/media/RETRO GAMING.c1a52a602585b2d6baf8.TTF",
-    "static/media/consumer_ban.png": "/2023F_CS489_FeedLovers/static/media/consumer_ban.ae43af01896ea07608cd.png",
-    "static/media/money.png": "/2023F_CS489_FeedLovers/static/media/money.b8c4e58ba82c356aae11.png",
-    "static/media/guide_grid.png": "/2023F_CS489_FeedLovers/static/media/guide_grid.f53ba53b7e3f55a9deb0.png",
-    "static/media/command_grid.png": "/2023F_CS489_FeedLovers/static/media/command_grid.798bc3abc43a6b756630.png",
-    "index.html": "/2023F_CS489_FeedLovers/index.html",
-    "main.93b00348.css.map": "/2023F_CS489_FeedLovers/static/css/main.93b00348.css.map",
-    "main.affb0a40.js.map": "/2023F_CS489_FeedLovers/static/js/main.affb0a40.js.map"
+    "main.css": "/2023f-cs489-feed-lovers/static/css/main.09e739c2.css",
+    "main.js": "/2023f-cs489-feed-lovers/static/js/main.c85c7602.js",
+    "static/media/end_animation.gif": "/2023f-cs489-feed-lovers/static/media/end_animation.d1caa755532d880de11c.gif",
+    "static/media/coinse.png": "/2023f-cs489-feed-lovers/static/media/coinse.95e68273655bacafd932.png",
+    "static/media/SAIRACONDENSED.ttf": "/2023f-cs489-feed-lovers/static/media/SAIRACONDENSED.1fad7fabf4cdbcebc3af.ttf",
+    "static/media/logo.png": "/2023f-cs489-feed-lovers/static/media/logo.5b04d47beb0ad9397a7f.png",
+    "static/media/news_background.png": "/2023f-cs489-feed-lovers/static/media/news_background.0b2be7ead02b967fd30e.png",
+    "static/media/RETRO GAMING.TTF": "/2023f-cs489-feed-lovers/static/media/RETRO GAMING.c1a52a602585b2d6baf8.TTF",
+    "static/media/consumer_ban.png": "/2023f-cs489-feed-lovers/static/media/consumer_ban.ae43af01896ea07608cd.png",
+    "static/media/money.png": "/2023f-cs489-feed-lovers/static/media/money.b8c4e58ba82c356aae11.png",
+    "static/media/guide_grid.png": "/2023f-cs489-feed-lovers/static/media/guide_grid.f53ba53b7e3f55a9deb0.png",
+    "static/media/command_grid.png": "/2023f-cs489-feed-lovers/static/media/command_grid.798bc3abc43a6b756630.png",
+    "index.html": "/2023f-cs489-feed-lovers/index.html",
+    "main.09e739c2.css.map": "/2023f-cs489-feed-lovers/static/css/main.09e739c2.css.map",
+    "main.c85c7602.js.map": "/2023f-cs489-feed-lovers/static/js/main.c85c7602.js.map"
   },
   "entrypoints": [
-    "static/css/main.93b00348.css",
-    "static/js/main.affb0a40.js"
+    "static/css/main.09e739c2.css",
+    "static/js/main.c85c7602.js"
   ]
 }
