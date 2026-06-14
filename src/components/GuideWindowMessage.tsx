@@ -1,5 +1,10 @@
-import { MouseEvent, MouseEventHandler, useState } from 'react';
-import { TypeAnimation } from 'react-type-animation';
+import {
+  MouseEvent,
+  MouseEventHandler,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 
 function GuideWindowMessage(props: {
   counter: number;
@@ -8,8 +13,52 @@ function GuideWindowMessage(props: {
 }) {
   const { counter: initCounter, messageList, navigate } = props;
   const [counter, setCounter] = useState(initCounter);
+  const [displayedText, setDisplayedText] = useState('');
+  const intervalRef = useRef<number>();
+
+  useEffect(() => {
+    const message = messageList[counter];
+    if (intervalRef.current !== undefined) {
+      window.clearInterval(intervalRef.current);
+    }
+
+    setDisplayedText('');
+
+    if (message.length === 0) {
+      return undefined;
+    }
+
+    let nextLength = 0;
+    intervalRef.current = window.setInterval(() => {
+      nextLength += 1;
+      setDisplayedText(message.slice(0, nextLength));
+
+      if (nextLength >= message.length) {
+        if (intervalRef.current !== undefined) {
+          window.clearInterval(intervalRef.current);
+          intervalRef.current = undefined;
+        }
+      }
+    }, 15);
+
+    return () => {
+      if (intervalRef.current !== undefined) {
+        window.clearInterval(intervalRef.current);
+        intervalRef.current = undefined;
+      }
+    };
+  }, [counter, messageList]);
 
   const increment: MouseEventHandler = (e: MouseEvent) => {
+    if (displayedText !== messageList[counter]) {
+      if (intervalRef.current !== undefined) {
+        window.clearInterval(intervalRef.current);
+        intervalRef.current = undefined;
+      }
+      setDisplayedText(messageList[counter]);
+      return;
+    }
+
     if (counter + 1 < messageList.length) setCounter(counter + 1);
     else {
       navigate(e);
@@ -33,11 +82,7 @@ function GuideWindowMessage(props: {
           letterSpacing: '0.25px',
         }}
       >
-        <TypeAnimation
-          key={counter}
-          sequence={[messageList[counter]]}
-          speed={75}
-        />
+        {displayedText}
       </div>
 
       <div
