@@ -1,6 +1,6 @@
 ## Abstract
 
-You can play this game [here](https://kadiace.github.io/2023F_CS489_FeedLovers).
+You can play this game [here](https://kadiace.github.io/2023f-cs489-feed-lovers).
 
 <img src="./public/demo1.gif" width="100%" height="auto" title="Demo 1"/>
 
